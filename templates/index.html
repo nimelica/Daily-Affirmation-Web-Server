@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Random Affirmation</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+    </head>
+    <body>
+       <div>
+        <marquee direction="right" behavior="alternate" style="border:papayawhip 10px SOLID"><h3 style="color:powderblue;"><b>Happy Birthday Betul!</b></h3></marquee>
+       </div>
+       <div><h2 style="color:powderblue;"><b>Feel Fabulous Every Day of Your New Age!</b></h2></div>
+        <img src="https://logos.textgiraffe.com/logos/logo-name/Betul-designstyle-i-love-m.png" alt="betul name">
+        <br>
+        <form action="/affirmation" method="post">
+               <p><h3 style="color:powderblue;">{{ sentence }}</h3></p>
+            <br>
+              <input type ="submit" value="AFFIRM" id="enter_button">
+        </form>
+
+    </body>
+</html>
